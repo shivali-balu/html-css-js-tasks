@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Layout Example (Responsive)</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header, footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+    }
+
+    .main-content {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    /* For tablets */
+    @media (min-width: 768px) {
+        .content {
+            flex-direction: row;
+        }
+
+        .left-sidebar, .right-sidebar {
+            width: 200px;
+        }
+    }
+
+    /* For larger screens */
+    @media (min-width: 1024px) {
+        .left-sidebar, .right-sidebar {
+            width: 250px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>Header</header>
+<div class="content">
+    <div class="main-content">Main Content</div>
+</div>
+<footer>Footer</footer>
+
+</body>
+</html>

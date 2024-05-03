@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Section</title>
+    <style>
+        .background-section {
+            background-color: rgb(79, 68, 68); /* Background color */
+            /* You can also use background-image property for an image */
+            /* background-image: url('background_image.jpg'); */
+            padding: 20px; 
+            color: red;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        } 
+        *{
+            font-family: sans-serif;
+        } 
+        .bg-pic{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObzXBZQ2TvdyjTE7YYay9X6w4vPD4ap_RBJE6Azn8Iw&s"); 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-size: cover; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-section">
+    <div class="content">
+        <h2>This is a Section with Background Color</h2>
+        <p>This section has a background color applied to it.</p>
+    </div>
+</div>
+
+<div class="content bg-pic">
+    <h2>Other Content</h2>
+    <p>This content is outside the background section.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Column Layout</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .column {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .container::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>This is the content of column 1.</p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>This is the content of column 2.</p>
+      </div>
+    </div>
+  </body>
+</html>

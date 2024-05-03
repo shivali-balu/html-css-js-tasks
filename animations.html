@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Shadows & Animations</title>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform transition */
+        margin-bottom: 20px;
+        animation: slideIn 0.5s ease;
+    }
+    .box:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateX(-5px); /* Move up slightly on hover */
+    }
+
+    /* Animation */
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Background colors */
+    .red {
+        background-color: #ff9999;
+    }
+
+    .green {
+        background-color: #99ff99;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="box red"></div>
+
+<div class="box green"></div>
+
+</body>
+</html>

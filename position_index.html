@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Features Example</title>
+<style>
+    /* Icon */
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+    }
+
+    /* Positioning and Z-index */
+    .container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #f0f0f0;
+    }
+
+    .absolute-box {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: #ff9999;
+        z-index: 1; /* Higher z-index */
+    }
+
+    .relative-box {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #99ff99;
+    }
+
+    /* Overflow */
+    .overflow-box {
+        width: 200px;
+        height: 100px;
+        background-color: #cccccc;
+        overflow: auto;
+    }
+
+    /* Opacity */
+    .opacity-box {
+        width: 100px;
+        height: 100px;
+        background-color: #9999ff;
+        opacity: 0.5; /* 50% opacity */
+    }
+
+    /* Float */
+    .float-box {
+        width: 100px;
+        height: 100px;
+        background-color: #ffcc99;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+
+<!-- Icon -->
+<div class="icon">Icon</div>
+
+<!-- Positioning and Z-index -->
+<div class="container">
+    <div class="absolute-box">Absolute</div>
+    <div class="relative-box">Relative</div>
+</div>
+
+<!-- Overflow -->
+<div class="overflow-box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla magna. Nam elementum diam id velit sollicitudin, et efficitur ex tincidunt. Nam nec feugiat mauris, vel vestibulum orci.</p>
+</div>
+
+<!-- Opacity -->
+<div class="opacity-box"></div>
+
+<!-- Float -->
+<div class="float-box"></div>
+<div class="float-box"></div>
+<div class="clearfix"></div>
+
+</body>
+</html>
